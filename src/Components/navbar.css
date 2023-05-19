@@ -102,7 +102,7 @@ font-family: 'Roboto', sans-serif;
 #prof{
     height: 30px;
     width: 30px;
-    margin-right: 20px;
+    margin-right: 4px;
 }
 #image{
     height: 30px;
@@ -110,7 +110,6 @@ font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 10px;
     border: 1px solid #868989;
     border-radius: 20px;
     padding: 20px;
@@ -123,23 +122,28 @@ font-family: 'Roboto', sans-serif;
     cursor: pointer;
 }
 .prof-drop{
-    height: 210px;
-    width: 180px;
+    height: 200px;
+    width: 150px;
     border: 1px solid #868989;
     border-radius: 10px;
-   /* display: none; */
+    position: relative;
+    z-index: 1000;
+    background-color: white;
+}
+.prof-arrow{
+    font-size: 1.2em;
 }
 .name{
     display: flex;
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid #868989;
-    padding: 8px;
+    padding: 6px;
 }
 .name>p{
 font-family: sans-serif;
 font-style: normal;
-font-size: 15px;
+font-size: 13px;
 line-height: 21px;
 }
 .details{
@@ -152,7 +156,7 @@ line-height: 21px;
 list-style: none;
 font-family: sans-serif;
 font-style: normal;
-font-size: 15px;
+font-size: 12px;
 line-height: 21px;
 margin: 5px;
 }
@@ -165,7 +169,7 @@ margin: 5px;
 .logout>p{
 font-family: sans-serif;
 font-style: normal;
-font-size: 15px;
+font-size: 12px;
 line-height: 21px;
 color: red;
 }
@@ -184,29 +188,30 @@ color: red;
     display: none;
 
 }
-#image:active #prof-drop{
- display: block;
-}
 #p1, #p2, #p3, #p4, #p5, #p6{
     height: 30px;
     width: 30px;
     margin-right: 10px;
 }
 .notifications-drop{
-    height: 320px;
-    width: 280px;
+    height: 285px;
+    width: 230px;
     border: 1px solid #868989;
     border-radius: 10px;
-    /* display: none; */
+    position: relative;
+    z-index: 1000;
+    background-color: white;
+    margin-top: 13px;
 }
 .notifications-drop>div{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px;
+    padding: 5px;
     flex-direction: row;
-border-bottom: 1px solid #868989;
-font-family: sans-serif;
+    border-bottom: 1px solid #868989;
+    font-family: sans-serif;
+    font-size: 12px;
 }
 .notifications-drop>div:hover{
     opacity: 0.8;
@@ -232,16 +237,53 @@ font-family: sans-serif;
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid #868989;
-    padding: 8px;
+    padding: 6px;
     font-family: sans-serif;
     font-size: 20px;
 }
 .notification>p{
     font-family: sans-serif;
     font-style: normal;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 21px;
     }
     #final{
         border-bottom: none;
+    }
+
+    .col-1{
+        width: 8.333%;
+    }
+    .col-2{
+        width: 16.666%;
+    }
+    .col-3{
+        width: 25%;
+    }
+    .col-4{
+        width: 33.333%;
+    }
+    .col-5{
+        width: 41.666%;
+    }
+    .col-6{
+        width: 50%;
+    }
+    .col-7{
+        width: 58.333%;
+    }
+    .col-8{
+        width: 66.666%;
+    }
+    .col-9{
+        width: 75%;
+    }
+    .col-10{
+        width: 83.333%;
+    }
+    .col-11{
+        width: 91.666%;
+    }
+    .col-12{
+        width: 100%;
     }

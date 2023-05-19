@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: 16%;
+    right: 0;
+}
+h1{
+    font-family: sans-serif;
+    font-size: 2.7em;
+    margin: 30px;
+}
+.eight, .flight{
+top: 200px;
+position: relative;
+background: #FFFFFF;
+border: 1px solid #C5D9FF;
+box-shadow: 0px 4px 10px rgba(144, 144, 144, 0.25);
+border-radius: 20px;
+font-family: sans-serif;
+font-size: 17px;
+width: 400px;
+height: 450px;
+padding: 30px;
+line-height: 30px;
+text-align: center;
+margin: 20px;
+}
+.hotel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.hotels{
+    top: 100%;
+position: relative;
+background: #FFFFFF;
+border: 1px solid #C5D9FF;
+box-shadow: 0px 4px 10px rgba(144, 144, 144, 0.25);
+border-radius: 20px;
+font-family: sans-serif;
+font-size: 17px;
+width: 400px;
+height: 450px;
+padding: 30px;
+line-height: 30px;
+text-align: center;
+margin: 20px;
+}
+
+.col-1{
+    width: 8.333%;
+}
+.col-2{
+    width: 16.666%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.333%;
+}
+.col-5{
+    width: 41.666%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.333%;
+}
+.col-8{
+    width: 66.666%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.333%;
+}
+.col-11{
+    width: 91.666%;
+}
+.col-12{
+    width: 100%;
+}

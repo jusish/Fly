@@ -39,7 +39,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="all">
+    <div className="all col-12">
       <div className="logo">
         <img src={img} alt="log" id="log" />
       </div>
@@ -63,7 +63,7 @@ export default function Navbar() {
         </div>
         <div id="image">
           <img src={prof} alt="profile" id="prof" />
-          <FiChevronDown  onClick={toggle2} onMouseLeave={handlingMouseLeave}/>
+          <FiChevronDown  onClick={toggle2} onMouseLeave={handlingMouseLeave} className="prof-arrow" />
         </div>
       </div>
       <div className={`prof-drop ${open ? "active" : "inactive"}`}>
