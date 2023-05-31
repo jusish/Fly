@@ -1,0 +1,172 @@
+/* *{
+   margin: auto;
+   padding: 0;
+   box-sizing: border-box;
+} */
+
+body{
+   margin-left: 0;
+   font-family: sans-serif;
+}
+
+.all-md{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   background-color: black;
+   position: relative;
+   bottom: 0;
+   top: 0vh;
+   width: 100%;
+   background: #FFFFFF;
+   border-top: 1px solid rgba(129, 118, 255, 0.78);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 40px 40px 0px 0px;
+} 
+.footer-h1{
+color: #5a6769;
+}
+
+.contacts{
+   margin: 2px 130px 10px 0px;
+}
+
+.feedback{
+   margin: 5px 0px 10px 0px;
+}
+
+.feedback li{
+   margin-bottom: 10px;
+}
+
+.twit{
+   color: #75E5FE;
+}
+
+.face{
+   color: #3F50EE; 
+}
+
+ul li{
+   list-style-type: none;
+   margin-bottom: 5px;
+}
+
+.all h1{
+   color: #919CB3;
+}
+
+.wtsap{
+   display: flex;
+   margin-bottom: 10px;
+}
+
+.faceb{
+   display: flex;
+   margin-bottom: 10px;
+}
+
+.twitter{
+   display: flex;
+   margin-bottom: 10px;
+}
+
+.instag{
+   display: flex;
+   margin-bottom: 10px;
+}
+
+.insta{
+   margin-left: 100px;
+}
+
+.whatsapp{
+  color: #9EFF8E;
+}
+
+.fc{
+   margin-left: 40px;
+}
+
+.twt{
+   margin-left: 54px;
+}
+
+a{
+   margin-left: 15px;
+   color: #4081FF;
+}
+
+.svg1{
+position: absolute;
+width: 50px;
+height: 50px;
+left: 395px;
+top: 15px;
+}
+
+.svg3{
+  position: absolute;
+  width: 60px;
+  height: 45px;
+  left: 280px;
+  top: 10px;
+}
+
+.svg2{
+   position: absolute;
+   width: 60px;
+   height: 45px;
+   left: 700px;
+   top: 110px;
+}
+
+.svg4{
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   left: 1100px;
+   top: 70px;
+}
+
+.poly23{
+   position: absolute;
+   width: 50px;
+   height: 130px;
+   left: 1050px;
+   top: 120px;
+}
+
+.poly20{
+   position: absolute;
+   width: 50px;
+   height: 130px;
+   left: 900px;
+   top: 50px;
+}
+
+.poly19{
+   position: absolute;
+   width: 50px;
+   height: 130px;
+   left: 700px;
+   top: -30px;
+}
+
+.poly21{
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   left: 395px;
+   top: 170px;
+}
+
+.instagram{
+   position: absolute;
+   background: linear-gradient(180deg, rgba(24, 101, 17, 0.439864) 0%, #E52727 27.89%, rgba(45, 51, 213, 0) 100%);
+   /* -webkit-background-clip: text; */
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+}
+

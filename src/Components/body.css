@@ -3,13 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .body{
-    position: absolute;
+    width: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    left: 16%;
-    right: 0;
+    justify-content: space-evenly;
 }
 h1{
     font-family: sans-serif;
@@ -25,12 +24,12 @@ box-shadow: 0px 4px 10px rgba(144, 144, 144, 0.25);
 border-radius: 20px;
 font-family: sans-serif;
 font-size: 17px;
-width: 400px;
-height: 450px;
+width: 30%;
+height: 500px;
 padding: 30px;
 line-height: 30px;
 text-align: center;
-margin: 20px;
+margin-bottom: 20px;
 }
 .hotel{
     display: flex;
@@ -39,7 +38,7 @@ margin: 20px;
     height: 100vh;
 }
 .hotels{
-    top: 100%;
+top: 20%;
 position: relative;
 background: #FFFFFF;
 border: 1px solid #C5D9FF;
@@ -47,47 +46,41 @@ box-shadow: 0px 4px 10px rgba(144, 144, 144, 0.25);
 border-radius: 20px;
 font-family: sans-serif;
 font-size: 17px;
-width: 400px;
+width: 30%;
 height: 450px;
 padding: 30px;
 line-height: 30px;
 text-align: center;
-margin: 20px;
 }
-
-.col-1{
-    width: 8.333%;
-}
-.col-2{
-    width: 16.666%;
-}
-.col-3{
-    width: 25%;
-}
-.col-4{
-    width: 33.333%;
-}
-.col-5{
-    width: 41.666%;
-}
-.col-6{
-    width: 50%;
-}
-.col-7{
-    width: 58.333%;
-}
-.col-8{
-    width: 66.666%;
-}
-.col-9{
-    width: 75%;
-}
-.col-10{
-    width: 83.333%;
-}
-.col-11{
-    width: 91.666%;
-}
-.col-12{
+.ending{
     width: 100%;
+    margin-top: 10%;
+    overflow-x: hidden;
+    height: 100vh;
+}
+.airline{
+    font-size: 2em;
+    color: #344d50;
+    opacity: 0.8;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 40px;
+}
+.ending>p{
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    z-index: 1;
+    letter-spacing: 0.8px;
+}
+.plane2{
+    position: absolute;
+    right: 4.5%;
+    width: 60%;
+    height: 650px;
+    top: 300%;
+    transform: rotate(-8deg);
 }

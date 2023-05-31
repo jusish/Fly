@@ -148,17 +148,18 @@ line-height: 21px;
 }
 .details{
     display: flex;
-    align-items: center;
-    justify-content: center;
     border-bottom: 1px solid #868989;
+    flex-direction: column;
+    padding-left: 40px;
 }
-.details>ul>li{
-list-style: none;
+.details #link{
+text-decoration: none;
 font-family: sans-serif;
 font-style: normal;
 font-size: 12px;
 line-height: 21px;
-margin: 5px;
+margin: 2px;
+color: black;
 }
 .logout{
     display: flex;
@@ -172,6 +173,7 @@ font-style: normal;
 font-size: 12px;
 line-height: 21px;
 color: red;
+cursor: pointer;
 }
 .prof-drop.active{
     position: absolute;

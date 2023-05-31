@@ -26,17 +26,23 @@ export default function Navbar() {
   const handlingMouseLeave = () => {
     isOpen(false);
   };
-  const handleKeyDown = (event) => {
-    if (event.key === 'ArrowUp') {
-      setSelectedItemIndex((prevIndex) =>
-        prevIndex === 0 ? prevIndex : prevIndex - 1
-      );
-    } else if (event.key === 'ArrowDown') {
-      setSelectedItemIndex((prevIndex) =>
-        prevIndex === notifications.length - 1 ? prevIndex : prevIndex + 1
-      );
-    }
+
+const handleItemClick = (item) => {
+    // Handle item click (e.g., navigate to a specific page)
+    console.log(`Navigating to ${item}`);
   };
+
+  // const handleKeyDown = (event) => {
+  //   if (event.key === 'ArrowUp') {
+  //     setSelectedItemIndex((prevIndex) =>
+  //       prevIndex === 0 ? prevIndex : prevIndex - 1
+  //     );
+  //   } else if (event.key === 'ArrowDown') {
+  //     setSelectedItemIndex((prevIndex) =>
+  //       prevIndex === notifications.length - 1 ? prevIndex : prevIndex + 1
+  //     );
+  //   }
+  // };
 
   return (
     <div className="all col-12">
@@ -57,27 +63,24 @@ export default function Navbar() {
       <div id="profile">
         <div id="not-icon"
           onClick={toggle}
-          onMouseLeave={handleMouseLeave}
         >
           <IoMdNotificationsOutline id="arrow" />
         </div>
         <div id="image">
           <img src={prof} alt="profile" id="prof" />
-          <FiChevronDown  onClick={toggle2} onMouseLeave={handlingMouseLeave} className="prof-arrow" />
+          <FiChevronDown  onClick={toggle2} className="prof-arrow" />
         </div>
       </div>
-      <div className={`prof-drop ${open ? "active" : "inactive"}`}>
+      <div className={`prof-drop ${open ? "active" : "inactive"}`} onMouseLeave={handlingMouseLeave}>
         <div className="name">
           <p>Signed in as Justin</p>
         </div>
         <div className="details">
-          <ul>
-            <li>Your Profile</li>
-            <li>Settings</li>
-            <li>Help</li>
-            <li>Contact Us</li>
-            <li>Feedback</li>
-          </ul>
+          <Link id="link" to="/Profile" onClick={() => handleItemClick('Profile')}>Your Profile</Link>
+          <Link id="link" to="/Settings" onClick={() => handleItemClick('Settings')}>Settings</Link>
+          <Link id="link" to="/about" onClick={() => handleItemClick('Help')}>Help</Link>
+          <Link id="link" to="contact" onClick={() => handleItemClick('Contact')}>Contact Us</Link>
+          <Link id="link" to="contact" onClick={() => handleItemClick('Feedback')}>Feedback</Link>
         </div>
         <div className="logout">
           <p>
@@ -86,7 +89,7 @@ export default function Navbar() {
           </p>
         </div>
       </div>
-      <div className={`notifications-drop ${show ? "active" : "inactive"}`} onKeyDown={handleKeyDown}>
+      <div className={`notifications-drop ${show ? "active" : "inactive"}`} onMouseLeave={handleMouseLeave}>
         <div id="notification">
           <p>Notifications</p>
         </div>

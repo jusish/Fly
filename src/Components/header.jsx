@@ -6,7 +6,7 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 
 function Header() {
   return (
-    <div className='head col-12'>
+    <div className='head'>
         <img src={airport} alt="airport" className='airport' />
         <img src={plane} alt="aeroplane" className='plane' />
         <div className="fly">

@@ -1,0 +1,36 @@
+.move-to-top-button {
+    position: absolute;
+    bottom: -1900px;
+    right: 20px;
+    background-color: transparent;
+    color: #5a6769;
+    padding: 3px;
+    border: 1px solid rgba(71, 222, 255, 0.84);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .up{
+    font-size: 3em;
+  }
+  .move-to-top-button::after {
+    content: "Move to Top";
+    display: block;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    background-color: #F0FCFF;
+    color: black;
+    padding: 10px;
+    border: 1px solid rgba(71, 222, 255, 0.84);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    width: 80px;
+    right: 120%;
+    bottom: 4px;
+  }
+  
+  .move-to-top-button:hover::after {
+    opacity: 1;
+  }
+  

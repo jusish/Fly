@@ -6,20 +6,21 @@ import Contacts from "./Pages/Contacts";
 import About from "./Pages/About";
 import Header from "./Components/header";
 import Body from "./Components/body";
-
+import Footer from "./Components/Footer"
 
 function App() {
   return (
-    <div className="app col-12">
+    <div className="app">
       <Router>
         <Routes>
           <Route path="/" element={Home} />
           <Route path="/contacts" element={Contacts} />
           <Route path="/about" element={About} />
         </Routes>
-        <Navbar />
-        <Header />
-        <Body />
+        <Navbar   />
+        <Header  />
+        <Body  />
+        <Footer />
       </Router>
     </div>
   );
